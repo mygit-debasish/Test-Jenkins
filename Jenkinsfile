@@ -35,7 +35,7 @@ pipeline {
 	 
 	 	success {
 			echo 'Post applications'
-	 		echo 'Success !!
+	 		echo 'Success !!'
 		}
 		
 	}
