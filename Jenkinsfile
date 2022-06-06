@@ -18,6 +18,7 @@ pipeline {
 	 		}
 	 		steps {
 	 			echo 'Testing the applications..'
+				echo 'Chnage detected !!'
 	 		}
 	 	}
 
