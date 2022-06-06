@@ -30,13 +30,14 @@ pipeline {
 	 }
 
 	 post {
-	 	//
+	 	echo 'Post applications'
 	 }
 	 success {
-	 	//
+	 	echo 'Success !!'
 	 }
+
 	 failure {
-	 	//
+	 	echo 'Failure ..!!'
 	 }
 
 		
