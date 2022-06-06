@@ -13,8 +13,8 @@ pipeline {
 	 	stage("Test") {
 	 		when {
 	 			expression {
-	 				//BRANCH_NAME == 'dev' && CODE_CHANGE== true
-					BRANCH_NAME == 'dev'
+	 				//BRANCH_NAME == 'main' && CODE_CHANGE== true
+					BRANCH_NAME == 'main'
 	 			}
 	 		}
 	 		steps {
