@@ -32,14 +32,14 @@ pipeline {
 
 	 post {
 	 	echo 'Post applications'
-	 }
-	 success {
-	 	echo 'Success !!'
-	 }
+	 
+	 	success {
+	 		echo 'Success !!'
+	 	}
 
-	 failure {
-	 	echo 'Failure ..!!'
-	 }
-
+	 	failure {
+	 		echo 'Failure ..!!'
+	 	}
 		
 	}
+}
