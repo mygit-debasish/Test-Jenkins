@@ -1,3 +1,4 @@
+CODE_CHANGE = true
 pipeline {
 	agent any 
 
@@ -10,8 +11,15 @@ pipeline {
 	 		}
 	 	}
 	 	stage("Test") {
+	 		when {
+	 			expression {
+	 				//BRANCH_NAME == 'main' && CODE_CHANGE== true
+					BRANCH_NAME == 'main'
+	 			}
+	 		}
 	 		steps {
 	 			echo 'Testing the applications..'
+				//echo 'Chnage detected !!'
 	 		}
 	 	}
 
@@ -23,5 +31,13 @@ pipeline {
 
 	 }
 
+	 post {
+	 	
+	 
+	 	success {
+			echo 'Post applications'
+	 		echo 'Success !!'
+		}
 		
 	}
+}
