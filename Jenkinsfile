@@ -6,7 +6,7 @@ pipeline {
 		 stage("build"){
 			 
 	 		steps {
-	 			echo 'Building the applications ...'
+	 			echo 'Building the applications ... adding to Github'
 	 		}
 	 	}
 	 	stage("Test") {
