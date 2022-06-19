@@ -7,7 +7,7 @@ pipeline {
 		 stage("build"){
 			 
 	 		steps {
-	 			echo 'Building the applications ... adding to Github from new branch newBranch '
+	 			echo 'Building the applications ... adding to Github from new branch newBranch , again change'
 	 		}
 	 	}
 	 	stage("Test") {
