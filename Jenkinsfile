@@ -14,7 +14,7 @@ pipeline {
 	 		when {
 	 			expression {
 	 				//BRANCH_NAME == 'main' && CODE_CHANGE== true
-					BRANCH_NAME == 'newBranch'
+					BRANCH_NAME == 'main'
 	 			}
 	 		}
 	 		steps {
