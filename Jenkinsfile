@@ -13,8 +13,8 @@ pipeline {
 	 	stage("Test") {
 	 		when {
 	 			expression {
-	 				//BRANCH_NAME == 'main' && CODE_CHANGE== true
-					BRANCH_NAME == 'main'
+	 				BRANCH_NAME == 'main' && CODE_CHANGE== true
+					//BRANCH_NAME == 'newBranch'
 	 			}
 	 		}
 	 		steps {
@@ -32,8 +32,6 @@ pipeline {
 	 }
 
 	 post {
-	 	
-	 
 	 	success {
 			echo 'Post applications'
 	 		echo 'Success !!'
